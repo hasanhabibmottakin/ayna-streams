@@ -1,0 +1,35 @@
+name: Run Ayna Fetch Every Hour
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # প্রতি ঘণ্টার ০ মিনিটে (UTC time)
+  workflow_dispatch:       # ম্যানুয়ালি ট্রিগার করার অপশন
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run script
+      run: |
+        python ayna.py
+
+    - name: Commit and push api.json
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git add api.json
+        git commit -m "Update api.json from workflow" || echo "No changes to commit"
+        git push
