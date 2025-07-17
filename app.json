@@ -1,0 +1,109 @@
+{
+  "channels": [
+    {
+      "name": "BTV VIP",
+      "logo": "https://images.toffeelive.com/images/program/63/logo/240x240/mobile_logo_118855001673182388.png",
+      "category": "Entertainment",
+      "urls": [
+        {
+          "label": "HD Quality",
+          "url": "http://global.ncare.live/live-orgin/btvbd-office-sg.stream/playlist.m3u8",
+          "type": "hls"
+        },
+        {
+          "label": "SD Quality",
+          "url": "http://103.230.105.252:1935/live/btv/chunklist_w524649012.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "name": "B TV World",
+      "logo": "https://images.toffeelive.com/images/program/1/logo/240x240/mobile_logo_310000001673183767.png",
+      "category": "Entertainment",
+      "externalLink": "https://btvworld.com/live"
+    },
+    {
+      "name": "NTV VIP",
+      "logo": "https://images.toffeelive.com/images/program/41/logo/240x240/mobile_logo_811238001673183089.png",
+      "category": "News",
+      "urls": [
+        {
+          "label": "Primary Stream",
+          "url": "https://global.ncare.live/live-orgin/ntvuk00332211.stream/playlist.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "name": "R TV VIP",
+      "logo": "https://images.toffeelive.com/images/program/338/logo/240x240/mobile_logo_401499001655891091.png",
+      "category": "Entertainment",
+      "urls": [
+        {
+          "label": "Main Stream",
+          "url": "https://global.ncare.live/live-orgin/rtv-sg.stream/playlist.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "name": "Ekushey TV",
+      "logo": "https://images.toffeelive.com/images/program/334/logo/240x240/mobile_logo_355998001673183662.png",
+      "category": "News",
+      "urls": [
+        {
+          "label": "HD Stream",
+          "url": "https://api.iptvbd.xyz/api/sony_ten1_hd.m3u8",
+          "type": "hls"
+        },
+        {
+          "label": "Backup Stream",
+          "url": "https://global.ncare.live/live-orgin/ekusheytv-8-org.stream/playlist.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "name": "Channel I",
+      "logo": "https://images.toffeelive.com/images/program/3/logo/240x240/mobile_logo_694865001655890816.png",
+      "category": "Entertainment",
+      "urls": [
+        {
+          "label": "Primary Link",
+          "url": "https://global.ncare.live/live-orgin/channeli-8-org.stream/playlist.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "name": "Banglavision",
+      "logo": "https://images.toffeelive.com/images/program/337/logo/240x240/mobile_logo_519481001656610377.png",
+      "category": "News",
+      "urls": [
+        {
+          "label": "Main Stream",
+          "url": "https://global.ncare.live/live-orgin/banglav000.stream/playlist.m3u8",
+          "type": "hls"
+        }
+      ]
+    },
+    {
+      "name": "Sports Channel",
+      "logo": "https://example.com/sports-logo.png",
+      "category": "Sports",
+      "urls": [
+        {
+          "label": "Premium Stream",
+          "url": "https://example.com/sports-premium.m3u8",
+          "type": "hls",
+          "drm": {
+            "scheme": "widevine",
+            "licenseUrl": "https://drm.example.com/license",
+            "keyId": "eb676abbcb345e96bbcf616630f1a3da"
+          }
+        }
+      ]
+    }
+  ]
+}
